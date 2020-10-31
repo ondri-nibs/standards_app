@@ -40,7 +40,7 @@ lvl1UI <- function(){
                             
                             checkboxInput(inputId = "checkLvl1FileExt", 
                                           label = "File Extensions Check",
-                                          value = TRUE),
+                                          value = TRUE)
                           ),
                           
                           checkboxInput(inputId = "checkLvl1CompressedFiles",
@@ -68,7 +68,7 @@ lvl1UI <- function(){
                             
                             checkboxInput(inputId = "compareLvl1READMEFileNames",
                                           label = "README File Names Comparison",
-                                          value = TRUE),
+                                          value = TRUE)
                           
                           ),
                           
@@ -114,7 +114,7 @@ lvl1UI <- function(){
                             
                             checkboxInput(inputId = "checkLvl1DICTDataTypes",
                                           label = "Data Types Check",
-                                          value = TRUE),
+                                          value = TRUE)
                           
                           ),
                           
@@ -162,11 +162,11 @@ lvl1UI <- function(){
                                         label = "Column Name Format Check",
                                         value = TRUE),
                           
-                          conditionalPanel( condition = "input.participantFile == 'TRUE'",
+                          conditionalPanel(condition = "input.participantFile == 'TRUE'",
                                             
                             checkboxInput(inputId = "verifyLvl1DATASubjectIDs",
                                           label = "Subject IDs Verification",
-                                          value = TRUE),
+                                          value = TRUE)
                           ),
                           checkboxInput(inputId = "compareLvl1DATASubjectIDs",
                                         label = "Subject IDs Comparison",
@@ -195,7 +195,7 @@ lvl1UI <- function(){
                           
                           checkboxInput(inputId = "checkLvl1DATAMissingCodes",
                                         label = "Missing Codes Check",
-                                        value = TRUE),
+                                        value = TRUE)
                           
                           ),
                           
@@ -259,11 +259,11 @@ lvl1UI <- function(){
                                           label = "Column Name Format Check",
                                           value = TRUE),
                             
-                            conditionalPanel( condition = "input.participantFile == 'TRUE'",
+                            conditionalPanel(condition = "input.participantFile == 'TRUE'",
                                               
                               checkboxInput(inputId = "verifyLvl1MISSINGSubjectIDs",
                                             label = "Subject IDs Verification",
-                                            value = TRUE),
+                                            value = TRUE)
                             ),
                             
                             checkboxInput(inputId = "compareLvl1MISSINGSubjectIDs",
@@ -300,7 +300,7 @@ lvl1UI <- function(){
                             
                             checkboxInput(inputId = "checkLvl1MISSINGMissingCodes",
                                           label = "Missing Codes Check",
-                                          value = TRUE),
+                                          value = TRUE)
                           ),
                           
                           checkboxInput(inputId = "checkLvl1MISSINGBlankCells",

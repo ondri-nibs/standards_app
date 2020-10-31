@@ -38,7 +38,7 @@ lvl3UI <- function(){
                             
                             checkboxInput(inputId = "verifyLvl3FileNameSubjectIDs",
                                           label = "File Name Subject IDs Verification",
-                                          value = TRUE),
+                                          value = TRUE)
                           
                           ),
                           
@@ -81,7 +81,7 @@ lvl3UI <- function(){
                               
                               checkboxInput(inputId = "checkFILELISTDateRange",
                                             label = "Date Range Check",
-                                            value = TRUE),
+                                            value = TRUE)
                             ),
                             
                             checkboxInput(inputId = "checkLvl3FILELISTTransferIDs",
@@ -106,7 +106,7 @@ lvl3UI <- function(){
                             
                             checkboxInput(inputId = "checkFILELISTMissingCodes",
                                           label = "Missing Codes Check",
-                                          value = TRUE),
+                                          value = TRUE)
                           ),
                           
                           checkboxInput(inputId = "checkFILELISTDateFormat",
@@ -156,7 +156,7 @@ lvl3UI <- function(){
                                           label = "Column Name Format Check",
                                           value = TRUE),
                             
-                            conditionalPanel( condition = "input.participantFile == 'TRUE'",
+                            conditionalPanel(condition = "input.participantFile == 'TRUE'",
                                                 
                               checkboxInput(inputId = "verifyLvl3MISSINGSubjectIDs",
                                             label = "Subject IDs Verification",
@@ -168,7 +168,7 @@ lvl3UI <- function(){
                               
                               checkboxInput(inputId = "checkLvl3MISSINGDateRange",
                                             label = "Date Range Check",
-                                            value = TRUE),
+                                            value = TRUE)
                             ),
                             checkboxInput(inputId = "checkLvl3MISSINGTransferIDs",
                                           label = "Transfer IDs Check",
@@ -192,7 +192,7 @@ lvl3UI <- function(){
                             
                             checkboxInput(inputId = "checkLvl3MISSINGMissingCodes",
                                           label = "Missing Codes Check",
-                                          value = TRUE),
+                                          value = TRUE)
                           ),
                           
                           checkboxInput(inputId = "checkLvl3MISSINGBlankCells",

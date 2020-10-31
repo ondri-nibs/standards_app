@@ -38,7 +38,7 @@ lvl2UI <- function(){
                               
                               checkboxInput(inputId = "compareLvl2FileNames", 
                                             label = "File Names Comparison",
-                                            value = TRUE),
+                                            value = TRUE)
                           ),
                           
                           checkboxInput(inputId = "checkLvl2CompressedFiles",
@@ -62,7 +62,7 @@ lvl2UI <- function(){
                               
                               checkboxInput(inputId = "compareLvl2READMEFileNames",
                                             label = "README File Names Comparison",
-                                            value = TRUE),
+                                            value = TRUE)
                           
                           ),
                           
@@ -108,7 +108,7 @@ lvl2UI <- function(){
                                 
                                 checkboxInput(inputId = "checkLvl2DICTDataTypes",
                                               label = "Data Types Check",
-                                              value = TRUE),
+                                              value = TRUE)
                             ),
                           
                           checkboxInput(inputId = "checkLvl2DICTBlankCells",
@@ -167,7 +167,7 @@ lvl2UI <- function(){
                                     
                                     checkboxInput(inputId = "checkLvl2DATADateRange",
                                                   label = "Date Range Check",
-                                                  value = TRUE),
+                                                  value = TRUE)
                                   
                                   ),
                                   checkboxInput(inputId = "compareLvl2DATASubjectIDs",
@@ -191,7 +191,7 @@ lvl2UI <- function(){
                                   
                                   checkboxInput(inputId = "checkLvl2DATAMissingCodes",
                                                 label = "Missing Codes Check",
-                                                value = TRUE),
+                                                value = TRUE)
                               ), 
                               
                               checkboxInput(inputId = "checkLvl2DATAPrecisionLevels",
@@ -257,7 +257,7 @@ lvl2UI <- function(){
                                 
                                 checkboxInput(inputId = "checkLvl2MISSINGDateRange",
                                               label = "Date Range Check",
-                                              value = TRUE),
+                                              value = TRUE)
                               ),
                               checkboxInput(inputId = "compareLvl2MISSINGSubjectIDs",
                                             label = "Subject IDs Comparison",
@@ -289,7 +289,7 @@ lvl2UI <- function(){
                               
                               checkboxInput(inputId = "checkLvl2MISSINGMissingCodes",
                                             label = "Missing Codes Check",
-                                            value = TRUE),
+                                            value = TRUE)
                               
                           ),
                           

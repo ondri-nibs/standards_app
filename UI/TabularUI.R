@@ -98,7 +98,7 @@ TabularUI <- function(){
                            
                            checkboxInput(inputId = "compareTabularFileNames", 
                                          label = "File Names Comparison",
-                                         value = TRUE),
+                                         value = TRUE)
                         ), 
                         
                          checkboxInput(inputId = "checkTabularFileExt", 
@@ -125,7 +125,7 @@ TabularUI <- function(){
                            
                            checkboxInput(inputId = "compareTabularREADMEFileNames",
                                          label = "README File Names Comparison",
-                                         value = TRUE),
+                                         value = TRUE)
                         ),
                          
 
@@ -170,7 +170,7 @@ TabularUI <- function(){
                          
                          checkboxInput(inputId = "checkTabularDICTDataTypes",
                                        label = "Data Types Check",
-                                       value = TRUE),
+                                       value = TRUE)
                         ),
                         
                          checkboxInput(inputId = "checkTabularDICTBlankCells",
@@ -216,11 +216,11 @@ TabularUI <- function(){
                                          label = "Column Name Format Check",
                                          value = TRUE),
                            
-                           conditionalPanel( condition = "input.participantFile == 'TRUE'",
+                           conditionalPanel(condition = "input.participantFile == 'TRUE'",
                                              
                              checkboxInput(inputId = "verifyTabularDATASubjectIDs",
                                            label = "Subject IDs Verification",
-                                           value = TRUE),
+                                           value = TRUE)
                            ),
                            
                            checkboxInput(inputId = "compareTabularDATASubjectIDs",
@@ -249,12 +249,12 @@ TabularUI <- function(){
                            
                            checkboxInput(inputId = "checkTabularDATAMissingCodes",
                                          label = "Missing Codes Check",
-                                         value = TRUE),
+                                         value = TRUE)
                         ),
                         
-                          checkboxInput(inputId = "checkTabularDATADateFormat",
-                                      label = "Date Format Check",
-                                      value = TRUE),
+                         checkboxInput(inputId = "checkTabularDATADateFormat",
+                                       label = "Date Format Check",
+                                       value = TRUE),
                         
                          checkboxInput(inputId = "checkTabularDATAColumnNameSyntax",
                                        label = "Column Name Syntax Check",
@@ -312,7 +312,7 @@ TabularUI <- function(){
                                              
                              checkboxInput(inputId = "checkTabularMISSINGColumnNameFormat",
                                            label = "Column Name Format Check",
-                                           value = TRUE),
+                                           value = TRUE)
                            ),
                            
                            checkboxInput(inputId = "verifyTabularMISSINGSubjectIDs",
@@ -353,7 +353,7 @@ TabularUI <- function(){
                            
                            checkboxInput(inputId = "checkTabularMISSINGMissingCodes",
                                          label = "Missing Codes Check",
-                                         value = TRUE),
+                                         value = TRUE)
                            
                         ),
                         

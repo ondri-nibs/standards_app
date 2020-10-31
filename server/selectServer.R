@@ -336,7 +336,7 @@ selectServer <- function(input, output, session){
                     padding-right:5px;
              ",
                tags$p("CNC"),
-               id = "BEAM_cohortCode",
+               id = "BEAM_cohortCode"
         )
       )
         
@@ -352,7 +352,7 @@ selectServer <- function(input, output, session){
                     padding-right:5px;
              ",
                  tags$p("01"),
-                 id = "BEAM_visitCode",
+                 id = "BEAM_visitCode"
           )
           )
         
@@ -375,7 +375,7 @@ selectServer <- function(input, output, session){
                  tags$p("GABL"),
                  tags$p("NPSY"),
                  tags$p("GNMC"),
-                 id = "BEAM_platformCode",
+                 id = "BEAM_platformCode"
                  
           )
           
@@ -398,7 +398,7 @@ selectServer <- function(input, output, session){
                  tags$p("SBH"),
                  tags$p("SMH"),
                  tags$p("TWH"),
-                 id = "BEAM_siteCode",
+                 id = "BEAM_siteCode"
           )
           
         )
@@ -432,7 +432,7 @@ selectServer <- function(input, output, session){
                  tags$p("FTD"),
                  tags$p("PD"),
                  tags$p("VCI"),
-                 id = "OND01_cohortCode",
+                 id = "OND01_cohortCode"
           )
         )
         
@@ -456,7 +456,7 @@ selectServer <- function(input, output, session){
                  tags$p("06"),
                  tags$p("07"),
                  tags$p("08"),
-                 id = "OND01_visitCode",
+                 id = "OND01_visitCode"
           )
         )
 
@@ -481,7 +481,7 @@ selectServer <- function(input, output, session){
                  tags$p("GNMC"),
                  tags$p("NPTH"),
                  tags$p("NIBS"),
-                 id = "OND01_platformCode",
+                 id = "OND01_platformCode"
                  
           )
           
@@ -513,7 +513,7 @@ selectServer <- function(input, output, session){
                  tags$p("TBR"),
                  tags$p("TOH"),
                  tags$p("TWH"),
-                 id = "OND01_siteCode",
+                 id = "OND01_siteCode"
           )
           
         )
@@ -548,7 +548,7 @@ selectServer <- function(input, output, session){
                tags$p("FTD"),
                tags$p("PD"),
                tags$p("VCI"),
-               id = "ReMiNDDTab_cohortCode",
+               id = "ReMiNDDTab_cohortCode"
         )
       )
       
@@ -565,7 +565,7 @@ selectServer <- function(input, output, session){
                     padding-right:5px;
              ",
                tags$p("01"),
-               id = "ReMiNDDTab_visitCode",
+               id = "ReMiNDDTab_visitCode"
         )
       )
       
@@ -587,7 +587,7 @@ selectServer <- function(input, output, session){
                tags$p("EYTK"),
                tags$p("GNMC"),
                tags$p("NPTH"),
-               id = "ReMiNDDTab_platformCode",
+               id = "ReMiNDDTab_platformCode"
                
         )
         
@@ -606,7 +606,7 @@ selectServer <- function(input, output, session){
                     padding-right:5px;
              ",
                tags$p("SBH"),
-               id = "ReMiNDDTab_siteCode",
+               id = "ReMiNDDTab_siteCode"
         )
         
       )

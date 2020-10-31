@@ -43,18 +43,18 @@ selectUI <- function(){
                             choices = list("Check with Participant File" = TRUE,
                                            "Check without Participant File" = FALSE),
                             selected = TRUE
-                            ),
+                            )
                ),
                
                conditionalPanel(condition = "(input.StudySelection != 'Package only checks')",
-                                conditionalPanel( condition = "input.participantFile == 'TRUE'",
+                                conditionalPanel(condition = "input.participantFile == 'TRUE'",
                  shinyFilesButton(id = "participantIDFile",
                                   label = "Click to select a participant ID file.",
                                   title = "Please select the participant ID file.",
                                   multiple = FALSE,
                                   icon = icon("file")),
                  
-                  verbatimTextOutput("participantIDFileOutput", placeholder = TRUE),
+                  verbatimTextOutput("participantIDFileOutput", placeholder = TRUE)
                                 )
                ),
                
@@ -69,7 +69,7 @@ selectUI <- function(){
                                   multiple = FALSE,
                                   icon = icon("file")),
                  
-                 verbatimTextOutput("transferIDFileOutput", placeholder = TRUE),
+                 verbatimTextOutput("transferIDFileOutput", placeholder = TRUE)
                ),
                
                useShinyalert(),
@@ -79,7 +79,7 @@ selectUI <- function(){
                             label = "Begin Check",
                             style = "color: white; background-color: #81D3EA;"),
                
-               tableOutput('extTable'),
+               tableOutput('extTable')
              ),
              
              # The input form on the right side panel
@@ -96,13 +96,13 @@ selectUI <- function(){
                                   column(8,
                                      textInput(
                                        inputId = "studyCode",
-                                       label = "Study Code"),
+                                       label = "Study Code")
                                   ),
                                   column(4,
                                      actionButton(style="margin-top:28px;
                                                   margin-left:-81px",
                                        inputId = "addStudyCode",
-                                                  label = "Add"),
+                                                  label = "Add")
                                   )
                                 )
                         )
@@ -114,13 +114,13 @@ selectUI <- function(){
                               column(8,
                                      textInput(
                                        inputId = "cohortCode",
-                                       label = "Cohort Code"),
+                                       label = "Cohort Code")
                               ),
                               column(4,
                                      actionButton(style="margin-top:28px;
                                               margin-left:-81px",
                                                   inputId = "addCohortCode",
-                                                  label = "Add"),
+                                                  label = "Add")
                               )
                             )
                     ),
@@ -131,13 +131,13 @@ selectUI <- function(){
                                      textInput(
                                        inputId = "visitCode",
                                        label = "Visit Code",
-                                       value = 0),
+                                       value = 0)
                               ),
                               column(4,
                                      actionButton(style="margin-top:28px;
                                               margin-left:-81px",
                                                   inputId = "addVisitCode",
-                                                  label = "Add"),
+                                                  label = "Add")
                               )
                             )
                    ),
@@ -147,13 +147,13 @@ selectUI <- function(){
                               column(8,
                                      textInput(
                                        inputId = "platformCode",
-                                       label = "Platform Code"),
+                                       label = "Platform Code")
                               ),
                               column(4,
                                      actionButton(style="margin-top:28px;
                                               margin-left:-81px",
                                                   inputId = "addPlatformCode",
-                                                  label = "Add"),
+                                                  label = "Add")
                               )
                             )
                    ),
@@ -163,13 +163,13 @@ selectUI <- function(){
                               column(8,
                                      textInput(
                                        inputId = "siteCode",
-                                       label = "Site Code"),
+                                       label = "Site Code")
                               ),
                               column(4,
                                      actionButton(style="margin-top:28px;
                                               margin-left:-81px",
                                                   inputId = "addSiteCode",
-                                                  label = "Add"),
+                                                  label = "Add")
                               )
                             )
                    ),
@@ -178,8 +178,7 @@ selectUI <- function(){
                    tags$div(style="height:350px;
                             width:800px;
                             ",
-                              tags$div(style="display:flex;
-                                       ",
+                              tags$div(style="display:flex;",
                                   
                                   conditionalPanel(condition = "(input.StudySelection == 'Custom')",
                                   tags$div(style="width: 150px;
@@ -187,7 +186,7 @@ selectUI <- function(){
                                            border: 1px solid black;
                                            background-color: grey",
                                     tags$h3(style="text-align:center;",
-                                            "Study Codes"),
+                                            "Study Codes")
                                   )
                                   ),
                                   
@@ -195,26 +194,26 @@ selectUI <- function(){
                                            border: 1px solid black;
                                            background-color:grey;",
                                     tags$h3(style="text-align:center;",
-                                            "Cohort Codes"),
+                                            "Cohort Codes")
                                   ),
                                   tags$div(style="width:200px;
                                            border: 1px solid black;
                                            background-color: grey",
                                   tags$h3(style="text-align:center;",
-                                          "Visit Codes"),
+                                          "Visit Codes")
                                   ),
                                   tags$div(style="width:200px;
                                            border: 1px solid black;
                                            background-color: grey",
                                   tags$h3(style="text-align:center;",
-                                          "Platform Codes"),
+                                          "Platform Codes")
                                   ),
                                   tags$div(style="width:200px;
                                            border: 1px solid black;
                                            background-color: grey",
                                   tags$h3(style="text-align:center;",
-                                           "Sites Codes"),
-                                  ),
+                                           "Sites Codes")
+                                  )
                                   
                               ),
                             
@@ -258,7 +257,7 @@ selectUI <- function(){
                                                 width: 200px;
                                                 overflow: scroll",
                                                 tags$div(id = "placeholder5")
-                                       ),
+                                       )
                                                 
                      )
                )
