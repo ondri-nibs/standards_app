@@ -131,11 +131,24 @@ selectServer <- function(input, output, session){
     else{
       # Assume for now every section has been filled, (so no empty list or else we get an error)
       # Turn the code lists into a dataframe
-      codes_df <- rbind.fill(Map(data.frame, ONDRI_CODES=substr(studyCodeList, 1,nchar(studyCodeList)-1), COHORT_CODES=substr(cohortCodeList, 1,nchar(cohortCodeList)-1), 
-                                 VISIT_CODES=substr(visitCodeList, 1,nchar(visitCodeList)-1), PLATFORM_CODES=substr(platformCodeList, 1,nchar(platformCodeList)-1), SITE_CODES=substr(siteCodeList, 1,nchar(siteCodeList)-1),
-                                 MISSING_CODES=missingCodeList, FILE_TYPES=file_typesList))
+      codes_df <- data.frame(substr(studyCodeList, 1,nchar(studyCodeList)-1), 
+                             stringsAsFactors = FALSE)
+      codes_df <- cbind.fill(codes_df, 
+                             substr(cohortCodeList, 1,nchar(cohortCodeList)-1), 
+                             substr(visitCodeList, 1,nchar(visitCodeList)-1),
+                             substr(platformCodeList, 1,nchar(platformCodeList)-1),
+                             substr(siteCodeList, 1,nchar(siteCodeList)-1),
+                             missingCodeList, 
+                             file_typesList,
+                             fill = "")
+      colnames(codes_df) <- c("ONDRI_CODES", "COHORT_CODES", "VISIT_CODES", 
+                              "PLATFORM_CODES", "SITE_CODES", "MISSING_CODES",
+                              "FILE_TYPES")
+      
       # Converting variables to characters
-      codes_df <- data.frame(lapply(codes_df, as.character), stringsAsFactors=FALSE)
+      codes_df <- data.frame(sapply(codes_df, as.character), 
+                             stringsAsFactors = FALSE)
+      
       # Save the data
       # Duplicates are being saved as autofill, This needs to be removed.
       saveData(codes_df)

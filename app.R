@@ -16,7 +16,7 @@ library(shinyalert)
 #this import might not be needed
 library(V8)
 library(stringr)
-library(shinydashboard) # For Dashbord UI
+library(shinydashboard) # For Dashboard UI
 
 library(plyr)
 library(shiny)
@@ -132,7 +132,7 @@ ui <- fluidPage(theme = "style.css",
                 titlePanel(title = tags$div(
                   img(class = "ondri-logo", src = "ONDRI_full-logo_web.png",
                       style="width: 278px;"), 
-                  "ONDRI Complete Standards Application"),
+                  "ONDRI Complete Standards Application 0.9.0.9001"),
                   windowTitle = "ONDRI Complete Standards Application"),
                 
                 # Create UI consisting of 4 tabs.

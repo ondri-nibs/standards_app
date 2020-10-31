@@ -196,9 +196,32 @@ getInvalidLvl1MISSING <- function(input, output, session, lvl1DirPath, participa
       combinedDF <- cbind.fill(combinedDF, getEncapsulationLocations(missingDF, dirName, 
                                                                      "MISSING.csv"), 
                                fill = "")
-    }
+      }
+    
+    # Make 1st row the column names of the huge/combined data frame.
+    colnames(combinedDF) <- as.character(unlist(combinedDF[ 1 , ]))
+    combinedDF <- combinedDF[ -1 , ]
+    
+    # Update dropdown box.
+    updateSelectInput(session, "lvl1AlgoSelection", label = "", 
+                      choices = colnames(combinedDF)[-1])
+    
+    
+    # Update list of subject IDs depending on selection from dropdown menu.
+    observe({
+      listOfSubjectIDs <- combinedDF[[ input$lvl1AlgoSelection ]]
+      
+      # Remove any NAs from the vector.
+      listOfSubjectIDs <- listOfSubjectIDs[ !(listOfSubjectIDs == "") ]
+      
+      # Convert to HTML for printing to screen.
+      listOfSubjectIDs <- HTML(paste(listOfSubjectIDs, collapse = "<br/>"))
+      
+      # Print the list of subject IDs.
+      output$tabularOutputID <- renderPrint(listOfSubjectIDs)
+    })
   }
-  }
-  }
+}
+}
 
 # [END]

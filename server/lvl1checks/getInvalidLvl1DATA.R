@@ -236,7 +236,7 @@ getInvalidLvl1DATA <- function(input, output, session, lvl1DirPath, participantI
       listOfSubjectIDs <- HTML(paste(listOfSubjectIDs, collapse = "<br/>"))
       
       # Print the list of subject IDs.
-      output$lvl1OutputID <- renderPrint(listOfSubjectIDs)
+      output$tabularOutputID <- renderPrint(listOfSubjectIDs)
     })
   }
   }
