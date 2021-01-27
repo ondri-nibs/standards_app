@@ -1,7 +1,7 @@
 README
 ================
 
-Jedid Ahn, Derek Beaton, Roberto Lentini, Logan Lim, & Jeremy Tanuan,
+Jedid Ahn, Roberto Lentini, Logan Lim, Jeremy Tanuan, & Derek Beaton,
 2021JAN25
 
 # Standards (Shiny) App <img src='etc/logo.png' align="right" height="139"/>
@@ -10,15 +10,15 @@ The Standards app is a heavy-duty app meant to cover multiple bases for
 the ONDRI project and beyond. The current standards app will perform
 standards checks in accordance with:
 
-  - The general data structure we use
+-   The general data structure we use
 
-  - OND01
+-   OND01
 
-  - BEAM
+-   BEAM
 
-  - OND06/REMINDD
+-   OND06/REMINDD
 
-  - and custom projects (with user input)
+-   and custom projects (with user input)
 
 Additional information, documentation, and guides coming soon.
 
@@ -31,26 +31,24 @@ Additional information, documentation, and guides coming soon.
 
 <br>
 
-2.  Download and install the shiny app directly with the following lines
+1.  Download and install the shiny app directly with the following lines
     of code:
 
-<!-- end list -->
+<!-- -->
 
-``` 
-  if (!require("devtools")){
-    install.packages("devtools")
-  }
-  devtools::install_github(repo = "ondri-nibs/standards_app")
-```
+      if (!require("devtools")){
+        install.packages("devtools")
+      }
+      devtools::install_github(repo = "ondri-nibs/standards_app")
 
 <br>
 
-3.  Type `ONDRIStandardsApp::installPackages()` to install any missing
+1.  Type `ONDRIStandardsApp::installPackages()` to install any missing
     packages and/or dependencies. If you get the following message in
     your RStudio console, please type 3. <br><br>
     <img src='etc/package-update.png'>
 
 <br>
 
-4.  When installation is complete, type `ONDRIStandardsApp::runApp()` to
+1.  When installation is complete, type `ONDRIStandardsApp::runApp()` to
     open the app.
