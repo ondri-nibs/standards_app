@@ -24,14 +24,14 @@ Additional information, documentation, and guides coming soon.
 
 <hr>
 
-1.  Install [R](https://cran.r-project.org/) first and then
+-   Install [R](https://cran.r-project.org/) first and then
     [RStudio](https://rstudio.com/products/rstudio/download/). Please
     choose the correct installer carefully as it will depend on your
     computer’s operating system.
 
 <br>
 
-1.  Download and install the shiny app directly with the following lines
+-   Download and install the shiny app directly with the following lines
     of code:
 
 <!-- -->
@@ -43,12 +43,12 @@ Additional information, documentation, and guides coming soon.
 
 <br>
 
-1.  Type `ONDRIStandardsApp::installPackages()` to install any missing
+-   Type `ONDRIStandardsApp::installPackages()` to install any missing
     packages and/or dependencies. If you get the following message in
     your RStudio console, please type 3. <br><br>
     <img src='etc/package-update.png'>
 
 <br>
 
-1.  When installation is complete, type `ONDRIStandardsApp::runApp()` to
+-   When installation is complete, type `ONDRIStandardsApp::runApp()` to
     open the app.
