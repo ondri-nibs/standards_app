@@ -41,6 +41,7 @@ rsconnect/
 **.csv
 **.txt
 **.rdata
+**.rda
 **.rds
 **.html
 **.xlm
