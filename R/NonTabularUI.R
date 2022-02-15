@@ -9,7 +9,7 @@
 # ========================================================================================
 
 # code to reset App
-jsResetCode <- "shinyjs.reset = function() {history.go(0)}" # Define the js method that resets the page
+jsResetCode <- "shinyjs.resetTab = function() {history.go(0)}" # Define the js method that resets the page
 
 jsCode <- "
 shinyjs.disableTab = function(name) {
@@ -61,7 +61,7 @@ NonTabularUI <- function(){
            inlineCSS(css),
            
            # Go back to File select Button
-           extendShinyjs(text = jsResetCode, functions = c("reset")),
+           extendShinyjs(text = jsResetCode, functions = c("resetTab")),
            actionButton(label = "Back To Select", 
                         inputId = "Back2",
                         style = "color: white; 

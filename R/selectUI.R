@@ -72,9 +72,6 @@ selectUI <- function(){
                  verbatimTextOutput("transferIDFileOutput", placeholder = TRUE)
                ),
                
-               useShinyalert(),
-               
-               
                actionButton(inputId = "BeginCheck",
                             label = "Begin Check",
                             style = "color: white; background-color: #81D3EA;"),
